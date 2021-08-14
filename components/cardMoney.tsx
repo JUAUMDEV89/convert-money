@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react';
 
 import { api } from '../services/api';
 
-import '../styles/cardMoney.css';
+import styled from '../styles/cardMoney.module.css';
 
 interface CardMoneyProps{
      de: string
      para: string
 }
 
-export function CardModey({ de, para }: CardMoneyProps){
+export function CardMoney({ de, para }: CardMoneyProps){
 
     const [ result, setResult ] = useState(0);
     const [ moedaA, setMoedaA ] = useState(0);
